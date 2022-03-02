@@ -1,0 +1,45 @@
+.opennav {
+    padding:-30px;
+    color: darkgray;
+}
+.div1 {
+    padding: 10px;
+}
+.logo
+{
+    font-size: 20px;
+    
+}
+.menu
+{
+    display:grid;
+    grid-template-columns: repeat(7, 50px);
+    justify-content: center;
+    align-items: center;
+    color: rgb(77, 75, 75);
+    padding: 10px;
+    margin: 10px;
+    position: absolute;
+    
+}
+.mobile-nav{
+    display: none;
+}
+
+.mobile-nav .search-icon{
+    width:32px;
+}
+.mobile-nav .search-icon svg:hover{
+    fill: #0cc;
+    cursor: pointer;
+}
+@media (max-width:1023px){
+    .opennav {
+        display: none;
+    }  
+    .mobile-nav {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+}
